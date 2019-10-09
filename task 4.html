@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <script>
+         let input =prompt("nhập vào kí tự của bạn");
+         var savePrompt= input;
+         var upper=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+         var lower=['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+         //var upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+         //var lower = 'abcdefghijklmnopqrstuvwxyz';
+
+         var output= [];
+         for(var i=0; i<savePrompt.length; i++) {
+             if( upper.indexOf(savePrompt[i]) !== -1) {
+                 output.push(savePrompt[i].toLowerCase());
+             }else if(lower.indexOf(savePrompt[i]) !== -1) {
+                 output.push(savePrompt[i].toUpperCase());
+         }else {
+                 output.push(savePrompt[i]);
+             }
+
+         }
+         document.write(output.join(''));
+
+
+     </script>
+
+</body>
+</html>

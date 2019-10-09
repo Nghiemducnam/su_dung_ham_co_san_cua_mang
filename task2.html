@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <script>
+         let input  = parseInt(prompt('Input here'));
+         let x= input.toString();
+         let result= [ ];
+         for ( let i=0; i< x.length; i++) {
+             if( x[i-1]%2==0 && x[i]%2==0) {
+                 result.push('-' + x[i])
+             } else {
+                 result.push(x[i])
+
+         }
+         }document.write(result.join(' '))
+     </script>
+</body>
+</html>
